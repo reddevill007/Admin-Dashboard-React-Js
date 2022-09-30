@@ -23,11 +23,13 @@ import {
   Line,
 } from "./pages";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 import "./App.css";
 import { kanban } from "@syncfusion/ej2";
 
 const App = () => {
-  const activeMenu = false;
+  const { activeMenu } = useStateContext();
 
   return (
     <div>
